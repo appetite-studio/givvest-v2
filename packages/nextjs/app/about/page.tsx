@@ -154,10 +154,32 @@ export default function AboutPage() {
             efficient compared to older blockchain technology. Transactions typically cost a few cents and settle in
             seconds.
           </p>
-          <p className="text-[#6b6b62] leading-relaxed">
+          <p className="text-[#6b6b62] leading-relaxed mb-6">
             Base also inherits the security properties of Ethereum, the most battle-tested smart-contract platform in
             existence.
           </p>
+
+          <div className="space-y-2">
+            <p className="text-xs font-semibold text-[#9b9b90] uppercase tracking-widest mb-3">Smart Contracts</p>
+            {[
+              { name: "GivvestVault", address: "0x756371243cd7699beE5bFe538368f02e67Fd946a" },
+              { name: "AaveV3Strategy", address: "0xD12fCAc36EA3D54E2A2ffB17A89f19C8E4509692" },
+              { name: "GivvestTreasury", address: "0x266527CdeF53eF879E5bd358F8AD9d4DEabb0d79" },
+            ].map(({ name, address }) => (
+              <div key={name}>
+                <p className="text-sm font-bold text-[#1a1a18] !m-0">{name}</p>
+                <a
+                  href={`https://sepolia.basescan.org/address/${address}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-mono text-[#b0b0a8] hover:text-[#3d6b4f] transition-colors"
+                >
+                  <span className="sm:hidden">{address.slice(0, 6) + "…" + address.slice(-4)}</span>
+                  <span className="hidden sm:inline">{address}</span>
+                </a>
+              </div>
+            ))}
+          </div>
         </section>
 
         <hr className="border-[#e8e6e0] mb-12" />
