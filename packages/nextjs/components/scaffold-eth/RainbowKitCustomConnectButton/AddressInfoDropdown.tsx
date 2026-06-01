@@ -15,6 +15,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { BlockieAvatar } from "~~/components/scaffold-eth";
 import { useCopyToClipboard, useOutsideClick, useScaffoldReadContract } from "~~/hooks/scaffold-eth";
+import { useTargetNetwork } from "~~/hooks/scaffold-eth/useTargetNetwork";
 import { getTargetNetworks } from "~~/utils/scaffold-eth";
 import { isENS } from "~~/utils/scaffold-eth/common";
 
@@ -38,6 +39,7 @@ export const AddressInfoDropdown = ({
   const { disconnect } = useDisconnect();
   const { connector } = useAccount();
   const checkSumAddress = getAddress(address);
+  const { targetNetwork } = useTargetNetwork();
 
   const { data: usdcAddress } = useScaffoldReadContract({ contractName: "GivvestVault", functionName: "usdc" });
   const { data: usdcBalance } = useBalance({ address, token: usdcAddress });
@@ -74,7 +76,7 @@ export const AddressInfoDropdown = ({
           <NetworkOptions hidden={!selectingNetwork} />
           {!selectingNetwork && (
             <li className="!p-0 hover:!bg-transparent active:!bg-transparent focus:!bg-transparent [&>*]:active:!bg-transparent [&>*]:focus:!bg-transparent">
-              <div className="bg-white rounded-xl p-3 mb-1 flex flex-col gap-3 border border-base-300 hover:!bg-white cursor-default">
+              <div className="bg-white rounded-xl p-3 mb-1 flex flex-col gap-2 border border-base-300 hover:!bg-white cursor-default">
                 <div className="text-center pointer-events-none">
                   <p className="text-[10px] text-base-content/40 uppercase tracking-widest font-medium">USDC Balance</p>
                   <p className="sm:hidden text-[11px] text-base-content/50 font-mono leading-none">
@@ -90,6 +92,7 @@ export const AddressInfoDropdown = ({
                 >
                   Get USDC
                 </a>
+                <p className="text-center text-[10px] text-base-content/40 !m-0">Network: {targetNetwork.name}</p>
               </div>
             </li>
           )}

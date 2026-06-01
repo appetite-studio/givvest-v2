@@ -83,9 +83,9 @@ const PARTNERS = [
     img: "/charity-partners/peoples-foundation.png",
   },
   {
-    name: "Human Welfare Foundation",
-    href: "https://hwfindia.org",
-    img: "/charity-partners/human-welfare-foundation.jpeg",
+    name: "Smile Foundation",
+    href: "https://smilefoundationindia.org",
+    img: "/charity-partners/smile-foundation.jpeg",
   },
   {
     name: "Detox Mind",
@@ -108,9 +108,9 @@ const PARTNERS = [
     img: "/charity-partners/give-do.jpg",
   },
   {
-    name: "Smile Foundation",
-    href: "https://smilefoundationindia.org",
-    img: "/charity-partners/smile-foundation.jpeg",
+    name: "Human Welfare Foundation",
+    href: "https://hwfindia.org",
+    img: "/charity-partners/human-welfare-foundation.jpeg",
   },
 ];
 
@@ -319,7 +319,7 @@ export default function HomePage() {
               </span>
               <h2 className="text-3xl font-extrabold text-[#0f0f0e]">Charity Partners</h2>
             </div>
-            <div className="flex flex-wrap gap-12 sm:gap-16">
+            <div className="grid grid-cols-3 gap-x-6 gap-y-8 place-items-center sm:flex sm:flex-wrap sm:justify-center sm:gap-12 lg:gap-16">
               {PARTNERS.map(p => (
                 <a
                   key={p.name}

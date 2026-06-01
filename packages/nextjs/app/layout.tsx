@@ -15,6 +15,11 @@ const GivvestApp = ({ children }: { children: React.ReactNode }) => {
     <html suppressHydrationWarning>
       <head>
         <meta name="apple-mobile-web-app-title" content="Givvest" />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="117887d6-6a7d-4f1b-a791-0ac51fa38814"
+        ></script>
       </head>
       <body>
         <ThemeProvider enableSystem={false} defaultTheme="light">
