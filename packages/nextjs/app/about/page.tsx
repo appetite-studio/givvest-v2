@@ -8,7 +8,7 @@ export default function AboutPage() {
         <p className="text-xs font-semibold text-[#3d6b4f] mb-3 tracking-widest uppercase">About Givvest</p>
         <h1 className="text-4xl font-bold text-[#1a1a18] mb-4 leading-tight">Giving without giving anything away</h1>
         <p className="text-lg text-[#6b6b62] leading-relaxed mb-16">
-          Givvest lets anyone donate to charity using only the interest their money earns — not the money itself. Your
+          Givvest lets anyone donate to charity using only the interest their money earns, not the money itself. Your
           principal stays yours. Always.
         </p>
 
@@ -23,7 +23,7 @@ export default function AboutPage() {
           </p>
           <p className="text-[#6b6b62] leading-relaxed">
             These aren&rsquo;t excuses. They&rsquo;re rational concerns. The result is that billions of dollars in
-            potential charity never gets donated — not because people don&rsquo;t care, but because giving forever feels
+            potential charity never gets donated, not because people don&rsquo;t care, but because giving forever feels
             irreversible.
           </p>
         </section>
@@ -38,7 +38,7 @@ export default function AboutPage() {
           </p>
           <p className="text-[#6b6b62] leading-relaxed mb-4">Givvest redirects it to charity instead.</p>
           <p className="text-[#6b6b62] leading-relaxed">
-            You deposit digital dollars (USDC — a 1:1 dollar-backed digital currency). Those dollars earn interest
+            You deposit digital dollars (USDC, a 1:1 dollar-backed digital currency). Those dollars earn interest
             through Aave, a well-established lending protocol. The interest goes to charity. Your original deposit comes
             back to you whenever you ask for it.
           </p>
@@ -50,7 +50,7 @@ export default function AboutPage() {
           <div className="space-y-5">
             {[
               { step: "01", text: "You deposit $1,000 into Givvest." },
-              { step: "02", text: "Your $1,000 earns, say, 5% interest per year — $50." },
+              { step: "02", text: "Your $1,000 earns, say, 5% interest per year: $50." },
               { step: "03", text: "That $50 goes to a charity voted on by the Givvest community." },
               { step: "04", text: "After a year, you withdraw your $1,000 back in full." },
               { step: "05", text: "You have lost nothing. A charity received $50." },
@@ -78,8 +78,8 @@ export default function AboutPage() {
             is always worth approximately $1.
           </p>
           <p className="text-[#6b6b62] leading-relaxed">
-            It&rsquo;s the type of digital asset most people use when they want the benefits of blockchain technology —
-            transparency, speed, low fees — without exposure to price swings.
+            It&rsquo;s the type of digital asset most people use when they want the benefits of blockchain technology:
+            transparency, speed, and low fees, without exposure to price swings.
           </p>
         </section>
 
@@ -87,7 +87,7 @@ export default function AboutPage() {
         <section className="mb-14">
           <h2 className="text-xl font-bold text-[#1a1a18] mb-4">How does the interest get generated?</h2>
           <p className="text-[#6b6b62] leading-relaxed mb-4">
-            Givvest uses Aave — one of the largest and most battle-tested lending protocols in digital finance. Think of
+            Givvest uses Aave, one of the largest and most battle-tested lending protocols in digital finance. Think of
             Aave as a transparent, automated lending bank that publishes every transaction publicly.
           </p>
           <p className="text-[#6b6b62] leading-relaxed mb-4">
@@ -95,8 +95,8 @@ export default function AboutPage() {
             interest. That interest is what gets donated to charity.
           </p>
           <p className="text-[#6b6b62] leading-relaxed">
-            Aave has operated securely since 2020, managing billions of dollars in deposits. It is not infallible — no
-            financial system is — but it represents the current standard for this type of activity in digital finance.
+            Aave has operated securely since 2020, managing billions of dollars in deposits. It is not infallible (no
+            financial system is), but it represents the current standard for this type of activity in digital finance.
           </p>
         </section>
 
@@ -112,13 +112,13 @@ export default function AboutPage() {
               <span className="text-[#c9882a] shrink-0">—</span>
               <span>
                 <strong className="text-[#1a1a18]">Variable yield:</strong> The interest rate Aave pays fluctuates with
-                market demand. Your donation amount will vary month to month — sometimes higher, sometimes lower.
+                market demand. Your donation amount will vary month to month, sometimes higher, sometimes lower.
               </span>
             </li>
             <li className="flex gap-2 items-start">
               <span className="text-[#c9882a] shrink-0">—</span>
               <span>
-                <strong className="text-[#1a1a18]">Keep your wallet safe:</strong> Givvest is non-custodial — only you
+                <strong className="text-[#1a1a18]">Keep your wallet safe:</strong> Givvest is non-custodial; only you
                 control your funds. Use a hardware wallet or a trusted software wallet, and never share your seed
                 phrase.
               </span>
@@ -135,14 +135,14 @@ export default function AboutPage() {
           <h2 className="text-xl font-bold text-[#1a1a18] mb-4">Who decides which charities receive the donations?</h2>
           <p className="text-[#6b6b62] leading-relaxed mb-4">
             The Givvest team currently controls the allocation of harvested yield to charities. Every distribution is
-            made on-chain — meaning anyone can verify that funds went where we said they went.
+            made on-chain, meaning anyone can verify that funds went where we said they went.
           </p>
           <p className="text-[#6b6b62] leading-relaxed mb-4">
             We plan to transition to DAO governance over time, opening allocation decisions to the Givvest community.
           </p>
           <p className="text-[#6b6b62] leading-relaxed">
-            At no point can governance access your principal. Governance can only direct the interest — the surplus
-            above what depositors are owed — to charity recipients.
+            At no point can governance access your principal. Governance can only direct the interest, the surplus above
+            what depositors are owed, to charity recipients.
           </p>
         </section>
 
@@ -162,14 +162,14 @@ export default function AboutPage() {
           <div className="space-y-2">
             <p className="text-xs font-semibold text-[#9b9b90] uppercase tracking-widest mb-3">Smart Contracts</p>
             {[
-              { name: "GivvestVault", address: "0x756371243cd7699beE5bFe538368f02e67Fd946a" },
-              { name: "AaveV3Strategy", address: "0xD12fCAc36EA3D54E2A2ffB17A89f19C8E4509692" },
-              { name: "GivvestTreasury", address: "0x266527CdeF53eF879E5bd358F8AD9d4DEabb0d79" },
+              { name: "GivvestVault", address: "0x977d2D76243ffead27E10e31AD8672C63eb695c2" },
+              { name: "AaveV3Strategy", address: "0xb34E9C4A66c453DAa1c19E4D33fB54efa621cFd5" },
+              { name: "GivvestTreasury", address: "0x40E1a644F56B3a8d23DD094dd80723a23030a6A8" },
             ].map(({ name, address }) => (
               <div key={name}>
                 <p className="text-sm font-bold text-[#1a1a18] !m-0">{name}</p>
                 <a
-                  href={`https://sepolia.basescan.org/address/${address}`}
+                  href={`https://basescan.org/address/${address}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-mono text-[#b0b0a8] hover:text-[#3d6b4f] transition-colors"
