@@ -142,12 +142,10 @@ export default function HomePage() {
                 Zero-cost charity
               </span>
               <h1 className="text-5xl sm:text-6xl font-extrabold text-[#0f0f0e] leading-[1.06] mb-6">
-                Let your savings
-                <br />
-                do good.
+                Donate without Spending.
               </h1>
               <p className="text-[#6b6b62] text-base leading-relaxed mb-10 max-w-md">
-                Deposit money. Donate the interest. Your principal stays 100% yours — withdraw any time.
+                Deposit money. Donate the interest. Your principal stays 100% yours and can be withdrawn any time.
               </p>
 
               {/* CTA buttons */}
